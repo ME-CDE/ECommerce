@@ -141,9 +141,11 @@ cart.forEach((car, index) =>{
 deletes.forEach((del, index) =>{
     del.addEventListener('click', ()=>{
         localStorage.clear();
-        orderContent[index].style.display = 'none';
-        orderCount[index].style.display = 'none';
-    })
+        orderContent[0].style.display = 'none';
+        orderContent[1].style.display = 'none';
+        orderCount[0].style.display = 'none';
+        orderCount[1].style.display = 'none';
+    });
 })
 minusNumber.addEventListener('click', decrease);
 addNumber.addEventListener('click', increase);

@@ -132,18 +132,16 @@
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
+        position: relative;
     }
-    .productImage{
-        background-image: url(./images/image-product-2.jpg);
-    }
-    .productImage{
-        background-image: url(./images/image-product-3.jpg);
-    }
-    .productImage{
-        background-image: url(./images/image-product-4.jpg);
-    }
-    .productImage{
-        background-image: url(./images/image-product-1.jpg);
+    .hiddenImage{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -100;
+        opacity: 0;
     }
     .previous, .next{
         width: 42px;
