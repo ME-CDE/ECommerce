@@ -126,15 +126,24 @@
         width: 28px;
     }
     .productImage{
-        background-image: url(./images/image-product-4.jpg);
-        background-image: url(./images/image-product-3.jpg);
-        background-image: url(./images/image-product-2.jpg);
         background-image: url(./images/image-product-1.jpg);
         width: 102vw;
         height: 100vw;
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0;
+    }
+    .productImage{
+        background-image: url(./images/image-product-2.jpg);
+    }
+    .productImage{
+        background-image: url(./images/image-product-3.jpg);
+    }
+    .productImage{
+        background-image: url(./images/image-product-4.jpg);
+    }
+    .productImage{
+        background-image: url(./images/image-product-1.jpg);
     }
     .previous, .next{
         width: 42px;
