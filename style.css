@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+@media (min-width: 280px) {
+    #profile {
+        width: 67px;
+        margin-top: 18px;
+    }
+    #navbarText{
+        background: hsl(223, 64%, 98%);
+    }
+    li, #col-2 p{
+        color: hsl(219, 9%, 45%)!important;
+        font-weight: 400;
+    }
+
+    #profilePic,
+    #cart {
+        list-style-type: none;
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+    .orderCount{
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: 1px;
+        padding: 0px 7px;
+        background-color: hsl(26, 100%, 55%);
+        font-size: 9px;
+        text-align: center;
+        color: hsl(0, 0%, 100%);
+        border-radius: 10px;
+    }
+    .containerDiv{
+        position: absolute;
+        top: 70px;
+        right: -10px;
+        width: 99vw;
+        height: max-content;
+        z-index: 1;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerDivClick{
+        display: flex;
+    }
+    .orderDiv{
+        width: 90vw;
+        max-width: 350px;
+        height: 230px;
+        border-radius: 8px;
+        background-color: hsl(0, 0%, 100%);
+        padding: 20px;
+        position: relative;
+        box-shadow:  0px 14px 18px 8px hsla(0, 0%, 0%, 0.12);
+    }
+    .orderDiv h5{
+        font-weight: 700;
+        border-bottom: 1px solid hsl(220, 14%, 75%);
+        padding-bottom: 20px;
+    }
+    .orderDiv:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: 'Your cart is empty';
+        width: 90vw;
+        max-width: 370px;
+        height: 230px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .orderContent{
+        width: 100%;
+        height: 80%;
+        position: relative;
+        z-index: 10;
+        background-color: hsl(0, 0%, 100%);
+        display: none;
+    }
+    .imgDetailsDiv{
+        height: max-content;
+        column-gap: 15px;
+    }
+    .imgOrder{
+        width: 45px;
+        height: 45px;
+        border-radius: 5px;
+    }
+    .delete, .imgOrder{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .delete{
+        width: 25px;
+        height: 25px;
+        background-image: url(./images/icon-delete.svg);
+    }
+    .orderContent button{
+        width: 100%;
+        height: 50px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(26, 100%, 55%);
+    }
+
+    #profilePic img {
+        width: 100%;
+        height: 100%;
+    }
+    #menu{
+        position: relative;
+        top: 2px;
+        width: 28px;
+    }
+    .productImage{
+        background-image: url(./images/image-product-1.jpg);
+        width: 102vw;
+        height: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    .previous, .next{
+        width: 42px;
+        height: 42px;
+        background-color: hsl(223, 64%, 98%);
+        border-radius: 50%;
+        top: 45%;
+    }
+    .previous{
+        left: 20px;
+    }
+    .next{
+        right: 20px;
+    }
+    #col-2 h6, #col-2 h1, #prices h2, #prices h5, #discounts, #amount h5{
+        font-weight: 700;
+    }
+    
+    #col-2 h6, #prices h5{
+        color: hsl(26, 100%, 55%);
+        font-size: 16px;
+    }
+    #prices h5{
+        margin-left: 15px;
+        padding: 3px 5px;
+        background: hsl(25, 100%, 94%);
+        border-radius: 8px;
+    }
+    #prices{
+        width: max-content;
+    }
+    .pricesDiv{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #prices h5, #addCart, #amount{
+        border-radius: 8px;
+    }
+    h6#discounts{
+        color: hsl(220, 14%, 75%);
+        text-decoration: line-through;
+    }
+    #amountDiv{
+        flex-direction: column;
+    }
+    #addCart{
+        width: 82vw;
+        background: hsl(26, 100%, 55%);
+        box-shadow: 0px 10px 20px 3px hsl(25, 100%, 94%);
+        height: 55px;
+    }
+    #amount{
+        width: 82vw;
+        height: 55px;
+        background:hsl(223, 64%, 98%);
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+    #amount h5, #prices h2, #col-2 h1{
+        color: hsl(220, 13%, 13%);
+    }
+    #addCart p{
+        color: hsl(0, 0%, 100%)!important;
+        font-weight: 700;
+    }
+    #cartP i{
+        font-size: 1.1rem;
+    }
+    #lightBox{
+        display: none;
+    }
+}
+@media (min-width: 376px) {
+    .containerDiv{
+        width: max-content;
+        right: 0;
+    }
+}
+@media (min-width: 425px) {
+    #amountDiv{
+        flex-direction: row;
+    }
+    #addCart{
+        width: 250px;
+        margin-left: 20px;
+    }
+    #amount{
+        width: 160px;
+        justify-content: space-between;
+    }
+}
+@media (min-width:480px) {
+    .pricesDiv{
+        justify-content: unset;
+        flex-direction: column;
+        align-items: unset;
+    }
+}
+@media (min-width:577px) {
+    .productImage{
+        width: 90vw;
+        height: 500px;
+        margin: 0 auto;
+    }
+    .orderDiv{
+        max-width: 370px;
+    }
+}
+@media (min-width:768px) {
+    #menu{
+        width: 35px;
+    }
+    #profilePic{
+    width: 40px;
+    height: 40px;
+    }
+    #profile {
+    width: 90px;
+    }
+    .productImage{
+        width: 80vw;
+        height: 550px;
+        margin: 0 auto;
+    }
+    #lightBox{
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
+        height: 100vh;
+        background-color: hsla(0, 0%, 0%, 0.75);
+    }
+    #lightBox > img{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    #bigpictureMain{
+        width: 450px;
+        border-radius: 15px;
+    }
+    .imagesMain img{
+        width: 92px;
+        border-radius: 10px;
+        position: relative;
+        z-index: -1;
+    }
+    #imagesMain{
+        width: 450px;
+    }
+    .imagesMain{
+        position: relative;
+    }
+    .imagesMain:hover{
+        width: 92px;
+        height: 92px;
+        background-color: hsla(223, 64%, 98%, 0.5);
+        border-radius: 10px;
+    }
+    .imagesClickedMain:after{
+        content: '';
+        width: 92px;
+        height: 92px;
+        background-color: hsla(223, 64%, 98%, 0.5);
+        border-radius: 10px;
+        outline: 2px solid hsl(26, 100%, 55%);
+        position: absolute;
+        left: 0;
+    }
+}
+@media (min-width:992px) {
+    #nav{
+        padding-bottom: 10px;
+        border-bottom: 1px solid hsl(220, 14%, 75%);
+    }
+    #navbarText{
+        background: none;
+    }
+    .containerDiv{
+        top: 80px;
+        right: 0;
+    }
+    .big-picture img{
+        width: 400px;
+        border-radius: 15px;
+    }
+    #images{
+        width: 400px;
+    }
+    .images img{
+        width: 80px;
+        border-radius: 10px;
+        position: relative;
+        z-index: -1;
+    }
+    .images{
+        position: relative;
+    }
+    .images:hover{
+        width: 80px;
+        height: 80px;
+        background-color: hsla(223, 64%, 98%, 0.5);
+        border-radius: 10px;
+    }
+    .imagesClicked:after{
+        content: '';
+        width: 80px;
+        height: 80px;
+        background-color: hsla(223, 64%, 98%, 0.5);
+        border-radius: 10px;
+        outline: 2px solid hsl(26, 100%, 55%);
+        position: absolute;
+        left: 0;
+    }
+
+
+}

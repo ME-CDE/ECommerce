@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopIT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <script src="app.js" defer></script>
+    <style>
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-light .navbar-toggler {
+            color: transparent;
+        }
+
+        @media (max-width:576px) {
+            #col-1 {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg px-lg-0" id="nav">
+            <a class="navbar-brand d-none d-lg-inline-block" href="#"><img src="./images/logo.svg" alt="" /></a>
+            <div class="container d-flex d-lg-none px-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="menu"></span>
+                </button>
+                <div
+                    class="container d-flex d-lg-none flex-1 justify-content-between align-items-center px-0 ms-1 ms-sm-2">
+                    <a class="navbar-brand width: 100%;" href="#" id="logo"><img src="./images/logo.svg" alt="" /></a>
+                    <ul class="d-flex justify-content-between p-0 align-items-center" id="profile">
+                        <li id="cart">
+                            <p class="orderCount">0</p>
+                            <img src="./images/icon-cart.svg" alt="" />
+                        </li>
+                        <li id="profilePic">
+                            <div class="containerDiv">
+                                <div class="orderDiv">
+                                    <h5>Cart</h5>
+                                    <div class="orderContent flex-column position-relative">
+                                        <div class="order d-flex align-items-center justify-content-between mt-2">
+                                            <div class="imgDetailsDiv d-flex align-items-center">
+                                                <div class="imgOrder"></div>
+                                                <p class="pOrder m-0"></p>
+                                            </div>
+                                            <div class="delete"></div>
+                                        </div>
+                                        <button class="position-absolute bottom-0 mb-3">checkout</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./images/image-avatar.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link" aria-current="page" href="#">Collection</a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link" href="#">Mens</a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link" href="#">Women</a>
+                    </li>
+                    <li class="nav-item me-lg-3">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <span class="navbar-text d-none d-lg-inline-block">
+                    <ul class="d-flex justify-content-between p-0 align-items-center" id="profile">
+                        <li id="cart">
+                            <p class="orderCount">0</p>
+                            <img src="./images/icon-cart.svg" alt="" />
+                        </li>
+                        <li id="profilePic">
+                            <div class="containerDiv">
+                                <div class="orderDiv">
+                                    <h5>Cart</h5>
+                                    <div class="orderContent flex-column position-relative">
+                                        <div class="order d-flex align-items-center justify-content-between mt-2">
+                                            <div class="imgDetailsDiv d-flex align-items-center">
+                                                <div class="imgOrder"></div>
+                                                <p class="pOrder m-0"></p>
+                                            </div>
+                                            <div class="delete"></div>
+                                        </div>
+                                        <button class="position-absolute bottom-0 mb-3">checkout</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./images/image-avatar.png" alt="" />
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="container-lg mt-0 mt-sm-4">
+        <div class="row align-items-center mt-lg-5" id="container">
+            <div class="col-lg-6 col-12" id="col-1">
+                <div class="d-flex big-picture justify-content-end me-md-3 ms-md-5 me-md-5">
+                    <div class="productImage d-lg-none position-relative">
+                        <div class="previous d-flex justify-content-center align-items-center position-absolute">
+                            <img src="./images/icon-previous.svg" alt="" width="8px">
+                        </div>
+                        <div class="next d-flex justify-content-center align-items-center position-absolute">
+                            <img src="./images/icon-next.svg" alt="" width="8px">
+                        </div>
+                    </div>
+                    <img src="./images/image-product-1.jpg" alt="" class="d-none d-lg-inline-block" id="bigPicture" />
+                </div>
+                <div class="d-none d-lg-flex justify-content-end mx-xl-5 me-5 mt-4">
+                    <div class="d-flex justify-content-between" id="images">
+                        <div class="images">
+                            <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                        </div>
+                        <div class="images">
+                            <img src="./images/image-product-2-thumbnail.jpg" alt="">
+                        </div>
+                        <div class="images">
+                            <img src="./images/image-product-3-thumbnail.jpg" alt="">
+                        </div>
+                        <div class="images">
+                            <img src="./images/image-product-4-thumbnail.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 mt-5 mb-5 mb-lg-0 mt-lg-0" id="col-2">
+                <div class="px-4 ms-md-5 mx-md-5 pe-xl-5 ps-lg-0">
+                    <h6 class="mb-3">SNEAKERS COMPANY</h6>
+                    <h1 class="mb-5">Fall Limited Edition Sneakers</h1>
+                    <p class="mb-4">
+                        These low-profile sneakers are your perfect casual wear companion.
+                        Featuring a durable rubber outer sole, they'll withstand
+                        everything the weather can offer.
+                    </p>
+                    <div class="pricesDiv d-flex">
+                        <div class="d-flex position-relative align-items-center" id="prices">
+                            <h2>$125.00</h2>
+                            <h5>50%</h5>
+                        </div>
+                        <h6 id="discounts">$250.00</h6>
+                    </div>
+                    <div class="d-flex mt-5" id="amountDiv">
+                        <div class="d-flex align-items-center px-3" id="amount">
+                            <img src="./images/icon-minus.svg" alt="minus" id="minus" />
+                            <h5 class="p-0 m-0" id="number">0</h5>
+                            <img src="./images/icon-plus.svg" alt="plus" id="add" />
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center ms-sm-4 ms-lg-3" id="addCart">
+                            <p class="m-0" id="cartP"><i class="bi bi-cart3"></i></p>
+                            <p class="ps-3 m-0">Add to cart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-absolute" id="lightBox">
+        <img src="./images/icon-close.svg" alt="" width="40px" class="close">
+            <div>
+                <img src="./images/image-product-1.jpg" alt="" class="d-none d-lg-inline-block" id="bigPictureMain" />
+            </div>
+            <div class="d-none d-lg-flex mt-4">
+                <div class="d-flex justify-content-between" id="imagesMain">
+                    <div class="imagesMain">
+                        <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="imagesMain">
+                        <img src="./images/image-product-2-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="imagesMain">
+                        <img src="./images/image-product-3-thumbnail.jpg" alt="">
+                    </div>
+                    <div class="imagesMain">
+                        <img src="./images/image-product-4-thumbnail.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
