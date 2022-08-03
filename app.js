@@ -141,7 +141,7 @@ cart.forEach((car, index) =>{
 deletes.forEach((del, index) =>{
     del.addEventListener('click', ()=>{
         localStorage.clear();
-        orderContent[1].style.display = 'none';
+        orderContent[index].style.display = 'none';
         orderCount[index].style.display = 'none';
     })
 })
